@@ -138,3 +138,28 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MomoSans 演示 with QR Code</title>
+  <style>…</style>
+</head>
+<body>
+  <!-- 主体和滑块等内容 -->
+
+  <div id="qrCode"></div>
+
+  <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+  <script>
+    new QRCode(document.getElementById("qrCode"), {
+      text: location.href,
+      width: 128,
+      height: 128,
+      colorDark: "#000",
+      colorLight: "#fff",
+    });
+  </script>
+</body>
+</html>
